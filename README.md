@@ -4,18 +4,13 @@ This project is a social media-like web application built using Vite for the fro
 
 ## Table of Contents
 
-- Getting Started
-- Project Structure
 - Features
+- Prerequisites
+- Installation
+    - Running the Server
+- Project Structure
 - API Integration
-- Fetching Posts (GET)
-- Creating a Post (POST)
-- Editing a Post (PUT)
-- Deleting a Post (DELETE)
-- Pagination
-- Authentication
-- Routing
-- Dependencies
+- Technologies Used
 
 ---
 
