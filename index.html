@@ -10,17 +10,25 @@
 </head>
 
 <body>
-  <img src="/images/noroff-logo.png" alt="Noroff Logo" />
+  <header>
+    <section class="bg-gradient-to-r from-blue-700 to-pink-300 p-5 text-white h-48 md:h-64">
+      <img src="/images/noroff-logo.png" alt="Noroff Logo" class="h-5" />
 
-  <h1>Home</h1>
+      <h1>See what people are saying, right NOW.</h1>
 
-  <a href="/profile/">My Profile</a>
-  <a href="/auth/login/">Login</a>
-  <a href="/auth/register/">Register</a>
-  <a href="/post/create/index.html">Create Post</a>
-  <button class="logoutBtn">Logout</button>
+      <a href="/auth/login/">Login</a>
+      <a href="/auth/register/">Register</a>
 
-  <section class="postSection">
+      <button class="logoutBtn">Logout</button>
+    </section>
+
+    <nav class="bg-white text-blue-300">
+      <a href="/profile/">My Profile</a>
+      <a href="/post/create/index.html">Create Post</a>
+    </nav>
+  </header>
+
+  <section class="postSection grid gap-4 grid-cols-1 m-5 md:grid-cols-2 md:m-9 lg:grid-cols-3 lg:m-16 ">
 
   </section>
   <section class="navigation">
