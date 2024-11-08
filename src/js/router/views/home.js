@@ -33,18 +33,18 @@ async function getPosts() {
 function showPosts(postData) {
   postData.forEach((post) => {
     postSection.innerHTML += `
-    <section>
+    <section class="flex flex-col justify-center items-center gap-4 rounded-lg shadow-lg p-10">
       <a class="post-link-card" href="post/index.html?id=${post.id}">
-      <section class="blog-post">
-      <div>
-      <h2>${post.title}</h2>
-      </div>
-      <button>Read more</button>
-      </section>
+        <section class="blog-post flex flex-col gap-8 items-center justify-center">
+          <div class="p-10">
+            <h2>${post.title}</h2>
+          </div>
+          <button class="bg-blue-600 text-white rounded h-8 w-28">Read</button>
+        </section>
       </a>
       <a class="post-link-card" href="post/edit/index.html?id=${post.id}">
-    <button>Edit</button>
-    </a>
+        <button class="border border-blue-600 text-blue-600 rounded h-8 w-28 hidden">Edit</button>
+      </a>
     </section>
     `;
   });
