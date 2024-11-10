@@ -9,22 +9,43 @@
   <script type="module" src="/src/app.js"></script>
 </head>
 
-<body>
-  <h1>Edit Post</h1>
+<body class="h-screen flex flex-col items-center">
+  <section
+    class="bg-gradient-to-r from-blue-700 to-pink-300 p-5 text-white h-48 md:h-64 flex flex-col justify-around w-full">
+    <div class="absolute top-5">
+      <img src="/images/noroff-logo.png" alt="Noroff Logo" class="w-16 h-auto" />
+    </div>
+    <h1 class="sm:text-2xl md:text-4xl text-center">Edit Post</h1>
+  </section>
 
-  <form name="editPost" id="updatePost">
-    <div>
-      <label for="title">Title</label>
-      <input id="title" type="text" name="title" required maxlength="20" title="Edit title of your post" />
+  <form name="editPost" id="updatePost"
+    class="flex flex-col items-center gap-10 h-auto w-3/4 md:w-2/4 lg:w-2/6 justify-around m-10 border border-blue-600 rounded">
+    <div class="mt-6 mb-2 w-full flex justify-center">
+      <label for="title" hidden>Title</label>
+      <input id="title" type="text" name="title" required maxlength="20" title="Edit title of your post"
+        class="border border-blue-700 w-2/3 p-1 rounded-sm" />
     </div>
 
-    <div>
-      <label for="body">Text</label>
-      <input id="body" type="text" name="body" required title="Edit the text in your post" />
+    <div class="mt-6 mb-2 w-full flex justify-center">
+      <label for="body" hidden>Text</label>
+      <textarea name="body" id="body" required title="Edit the text in your post"
+        class="border border-blue-700 w-2/3 p-1 rounded-sm h-28">
+  </textarea>
     </div>
-    <button>Edit Post</button>
+    <div class="flex gap-8">
+      <button
+        class="deleteBtn bg-transparent text-blue-700 border border-blue-700 rounded text-sm sm:text-xl w-20 sm:w-28 md:w-32 h-8 sm:h-10 md:h-12 text-center content-center">
+        Delete
+      </button>
+
+      <button
+        class="bg-blue-700 text-white rounded text-sm sm:text-xl w-20 sm:w-28 md:w-32 h-8 sm:h-10 md:h-12 mb-5">Edit
+        Post
+      </button>
+    </div>
+
   </form>
-  <button class="deleteBtn">Delete</button>
+
 </body>
 
 </html>
