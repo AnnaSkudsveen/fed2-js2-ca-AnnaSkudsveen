@@ -33,6 +33,7 @@ async function getPosts() {
 function showPosts(postData) {
   postData.forEach((post) => {
     postSection.innerHTML += `
+    <section>
       <a class="post-link-card" href="post/index.html?id=${post.id}">
       <section class="blog-post">
       <div>
@@ -44,6 +45,7 @@ function showPosts(postData) {
       <a class="post-link-card" href="post/edit/index.html?id=${post.id}">
     <button>Edit</button>
     </a>
+    </section>
     `;
   });
 }
