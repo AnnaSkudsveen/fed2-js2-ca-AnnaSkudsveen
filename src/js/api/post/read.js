@@ -22,12 +22,11 @@ export async function readPost(id) {
 
   function showPost(postData) {
     postSection.innerHTML += `
-      <section class="blog-post">
+      <section class="blog-post w-3/4 md:w-2/3 lg:w-1/3">
       <div>
-      <h2>${postData.title}</h2>
+      <h2 class="text-3xl">${postData.title}</h2>
       <p>${postData.body}</p>
       </div>
-      <button>Read more</button>
       </section>
         `;
   }

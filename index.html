@@ -10,20 +10,39 @@
 </head>
 
 <body>
-  <img src="/images/noroff-logo.png" alt="Noroff Logo" />
+  <header>
+    <section class="bg-gradient-to-r from-blue-700 to-pink-300 p-5 text-white h-48 md:h-64">
+      <div class="flex justify-between">
+        <img src="/images/noroff-logo.png" alt="Noroff Logo" class="h-5" />
 
-  <h1>Home</h1>
+        <div class="flex gap-2">
+          <a href="/auth/register/"
+            class="border border-white rounded bg-transparent p-2 w-20 md:w-28 lg:w-32 text-sm md:text-xl text-center">Register</a>
 
-  <a href="/profile/">My Profile</a>
-  <a href="/auth/login/">Login</a>
-  <a href="/auth/register/">Register</a>
-  <a href="/post/create/index.html">Create Post</a>
-  <button class="logoutBtn">Logout</button>
+          <a href="/auth/login/"
+            class="border border-white rounded bg-white bg-opacity-40 p-2 w-20 md:w-28 lg:w-32 text-sm md:text-xl text-center">Login</a>
+        </div>
+      </div>
 
-  <section class="postSection">
+      <h1 class="text-xl sm:text-2xl md:text-4xl text-center p-10">See what people are saying, right NOW.</h1>
+    </section>
+
+    <nav class="bg-white text-blue-300 h-10 md:h-12 lg:h-16 shadow-lg flex justify-center items-center">
+      <a href="/profile/"
+        class="text-sm w-28 sm:text-base sm:w-40 border-r border-l border-r-blue-300 border-l-blue-300 h-full flex justify-center items-center hover:text-blue-500">My
+        Profile</a>
+      <a href="/post/create/index.html"
+        class="text-sm w-28 sm:text-base sm:w-40 border-r border-l border-r-blue-300 border-l-blue-300 h-full flex justify-center items-center hover:text-blue-500">Create
+        Post</a>
+      <button
+        class="logoutBtn text-sm w-28 sm:text-base sm:w-40 border-r border-l border-r-blue-300 border-l-blue-300 h-full flex justify-center items-center hover:text-blue-500">Logout</button>
+    </nav>
+  </header>
+
+  <section class=" postSection grid gap-4 grid-cols-1 m-5 md:grid-cols-2 md:m-9 lg:grid-cols-3 lg:m-16 ">
 
   </section>
-  <section class="navigation">
+  <section class=" navigation">
 
   </section>
 </body>
