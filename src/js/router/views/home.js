@@ -43,7 +43,7 @@ function showPosts(postData) {
         </section>
       </a>
       <a class="post-link-card" href="post/edit/index.html?id=${post.id}">
-        <button class="border border-blue-600 text-blue-600 rounded h-8 w-28 hidden">Edit</button>
+        <button class="border border-blue-600 text-blue-600 rounded h-8 w-28">Edit</button>
       </a>
     </section>
     `;
