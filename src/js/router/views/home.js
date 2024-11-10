@@ -66,10 +66,12 @@ function paginate(items, itemsPerPage) {
 function renderPagination(paginatedPosts) {
   const pagination = document.querySelector(".navigation");
   pagination.innerHTML = "";
+  pagination.className = "border-t flex justify-center";
 
   paginatedPosts.forEach((page, index) => {
     const button = document.createElement("button");
     button.textContent = index + 1;
+    button.className = "p-1 text-lg hover:text-blue-600";
     button.addEventListener("click", () => {
       postSection.innerHTML = "";
       showPosts(page);
